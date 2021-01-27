@@ -10,13 +10,15 @@ class CreateNavbar {
     logo.textContent = 'Balkan Pasion'; 
     menu.textContent = 'Our Menu';
     contact.textContent = "Contact Us";
+    logo.id = 'home'
     menu.id = 'menu';
     contact.id = 'contact';
+    container.id = 'contet'
     ul.append(menu);
     ul.append(contact);
     container.append(logo);
     container.append(ul);
-    container.classList.add('trying');
+    container.classList.add('nav');
     header.append(container);
     content.prepend(header);
   }  

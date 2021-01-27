@@ -1,22 +1,40 @@
 $bgpurple: purple;
+$bgblue: blue;
+$bgg: green;
 
 html, body, h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
 }
 
-.trying {
+.nav {
   background-color: $bgpurple;
+  display: flex;
+  justify-content: space-around;
 }
 
 .prueba {
   width: 50px;
   height: 100px;
   background-color: $bgpurple;
-  display: none;
 }
 
 .prueba2 {
   @extend .prueba;
+
+  background-color: $bgblue;
+}
+
+.prueba3 {
+  @extend .prueba;
+
+  background-color: $bgg;
+}
+
+.visible {
   display: block;
+}
+
+.invisible {
+  display: none;
 }

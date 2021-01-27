@@ -1,3 +1,4 @@
+
 function menuPage(){
     const container = document.querySelector('#content');
     const menu = document.createElement("div")
