@@ -1,0 +1,22 @@
+$bgpurple: purple;
+
+html, body, h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+.trying {
+  background-color: $bgpurple;
+}
+
+.prueba {
+  width: 50px;
+  height: 100px;
+  background-color: $bgpurple;
+  display: none;
+}
+
+.prueba2 {
+  @extend .prueba;
+  display: block;
+}
