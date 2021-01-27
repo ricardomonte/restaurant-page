@@ -1,4 +1,4 @@
-function menu1(){
+function menuPage(){
     const container = document.querySelector('#content');
     const menu = document.createElement("div")
 
@@ -7,4 +7,4 @@ function menu1(){
     container.append(menu);
 }
 
-export { menu1 };
+export { menuPage };

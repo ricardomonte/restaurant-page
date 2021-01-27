@@ -1,6 +1,6 @@
 import { CreateNavbar } from './assets/navbar';
 import './style.scss';
-import { menu1 } from './assets/menu';
+import { menuPage } from './assets/menu';
 import { Checking } from './assets/checkclass';
 
 
@@ -8,9 +8,9 @@ const navbar = new CreateNavbar;
 navbar.creation();
 
 const menu = document.querySelector('#menu');
-menu1()
-const lala = new Checking
-lala.whichClass(menu)
+menuPage()
+const classMenu = new Checking
+classMenu.whichClass(menu)
 
 
 // a.addEventListener('click', (e) => {
