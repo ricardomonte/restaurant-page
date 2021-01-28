@@ -1,11 +1,14 @@
 const path = require('path');
-const { mainModule } = require('process');
+// const { mainModule } = require('process');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+  },
+  devServer: {
+    contentBase: './dist',
   },
   module: {
     rules: [
