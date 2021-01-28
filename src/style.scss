@@ -2,15 +2,60 @@ $bgpurple: purple;
 $bgblue: blue;
 $bgg: green;
 
-html, body, h1, h2, h3, h4, h5, p {
+html, body, h1, h2, h3, h4, h5, p, ul {
   margin: 0;
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .nav {
-  background-color: $bgpurple;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #e0e0e0;
+
+  .logo {
+    padding: 2rem;
+    font-size: 46px;
+  }
+
+  ul {
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+
+    .tab {
+      fill: #ead4af;
+      stroke: #e0e0e0;
+      position: relative;
+      transform: translate(0px, 6px);
+      width: 160px;
+      height: 40px;
+    }
+
+    .tab2{
+      @extend .tab;
+    }
+
+    .textcontact {
+      fill: #8c8c8c;
+      transform-box: fill-box;
+      transform: translate(40px, 30px) scale(1.5);
+      stroke: none;
+      cursor: pointer;
+    }
+
+    .textmenu {
+      @extend .textcontact;
+
+      transform: translate(50px, 30px) scale(1.5);
+    }
+  }
+
 }
 
 .prueba {
