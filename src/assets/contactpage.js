@@ -1,6 +1,6 @@
-import createSVG from './createSvgPhone';
+import createSVGp from './createSvgPhone';
 
-function contactPage() {
+const contactPage = () => {
   let phone = '';
   const container = document.querySelector('#content');
   const contact = document.createElement('div');
@@ -8,7 +8,7 @@ function contactPage() {
   const containerPhone = document.createElement('div');
   const numberContact = document.createElement('div');
   const containerElements = document.createElement('div');
-  phone = createSVG();
+  phone = createSVGp();
   numberContact.textContent = '+381069789254';
   title.textContent = 'Contact Us';
   phone.classList.add('phone');
@@ -24,6 +24,6 @@ function contactPage() {
   containerElements.append(numberContact);
   contact.append(containerElements);
   container.append(contact);
-}
+};
 
 export { contactPage as default };

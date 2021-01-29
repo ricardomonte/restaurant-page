@@ -4,7 +4,7 @@ import ceva from './images/cevapi.jpg';
 import meso from './images/mesano.jpg';
 import pre from './images/prebranac.jpg';
 
-function menuPage() {
+const menuPage = () => {
   const container = document.querySelector('#content');
   const containerMenu = document.createElement('div');
   const menu = document.createElement('div');
@@ -57,6 +57,6 @@ function menuPage() {
   containerMenu.id = 'mamamia';
   containerMenu.append(menu);
   container.append(containerMenu);
-}
+};
 
 export { menuPage as default };
