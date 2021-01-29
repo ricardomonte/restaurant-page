@@ -1,6 +1,6 @@
 # Restaurant Balkan Pasion
 
-The Restaurant project was built as the second project of the JavaScript module from Microvers. Here the user can add a new book, deleted and marked as already read it or not read it.
+The Restaurant project was built as the second project of the JavaScript module from Microvers. Here you can see the menu and the contact page using tabbed browsing.
 One of the goals of this project is to work with webpack
 
 
