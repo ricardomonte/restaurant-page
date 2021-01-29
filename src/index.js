@@ -1,18 +1,12 @@
-import { CreateNavbar } from './assets/navbar';
+import { init } from './assets/initailizer';
 import './style.scss';
 import { menuPage } from './assets/menupage';
 import { contactPage } from './assets/contactpage';
 import { homePage } from './assets/homepage';
-// import img from './assets/images/sarma.jpg';
 
 
 
-
-const navbar = new CreateNavbar;
-navbar.creation();
-
-
-homePage()
+init();
 
 
 const containerNav = document.querySelector('#contet')
@@ -35,6 +29,3 @@ containerNav.addEventListener('click', (e) => {
     homePage()
   }
 })
-
-console.log('hel')
-

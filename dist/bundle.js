@@ -170,6 +170,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/assets/initailizer.js":
+/*!***********************************!*\
+  !*** ./src/assets/initailizer.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"init\": () => /* binding */ init\n/* harmony export */ });\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/assets/navbar.js\");\n/* harmony import */ var _homepage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./homepage */ \"./src/assets/homepage.js\");\n\n\n\nfunction init(){\n  const navbar = new _navbar__WEBPACK_IMPORTED_MODULE_0__.CreateNavbar;\n  navbar.creation();\n\n\n  (0,_homepage__WEBPACK_IMPORTED_MODULE_1__.homePage)();\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/assets/initailizer.js?");
+
+/***/ }),
+
 /***/ "./src/assets/menupage.js":
 /*!********************************!*\
   !*** ./src/assets/menupage.js ***!
@@ -196,7 +206,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/navbar */ \"./src/assets/navbar.js\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _assets_menupage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/menupage */ \"./src/assets/menupage.js\");\n/* harmony import */ var _assets_contactpage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/contactpage */ \"./src/assets/contactpage.js\");\n/* harmony import */ var _assets_homepage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/homepage */ \"./src/assets/homepage.js\");\n\n\n\n\n\n// import img from './assets/images/sarma.jpg';\n\n\n\n\nconst navbar = new _assets_navbar__WEBPACK_IMPORTED_MODULE_0__.CreateNavbar;\nnavbar.creation();\n\n\n(0,_assets_homepage__WEBPACK_IMPORTED_MODULE_4__.homePage)()\n\n\nconst containerNav = document.querySelector('#contet')\n\n\ncontainerNav.addEventListener('click', (e) => {\n  const content = document.querySelector('#content')\n  const first = content.firstElementChild\n  \n  if(e.target.id === 'menu'){\n    first.remove()\n    ;(0,_assets_menupage__WEBPACK_IMPORTED_MODULE_2__.menuPage)()\n  }\n  if(e.target.id === 'contact'){\n    first.remove()\n    ;(0,_assets_contactpage__WEBPACK_IMPORTED_MODULE_3__.contactPage)()\n  }\n  if(e.target.id === 'home'){\n    first.remove()\n    ;(0,_assets_homepage__WEBPACK_IMPORTED_MODULE_4__.homePage)()\n  }\n})\n\nconsole.log('hel')\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_initailizer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/initailizer */ \"./src/assets/initailizer.js\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _assets_menupage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/menupage */ \"./src/assets/menupage.js\");\n/* harmony import */ var _assets_contactpage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/contactpage */ \"./src/assets/contactpage.js\");\n/* harmony import */ var _assets_homepage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/homepage */ \"./src/assets/homepage.js\");\n\n\n\n\n\n\n\n\n(0,_assets_initailizer__WEBPACK_IMPORTED_MODULE_0__.init)();\n\n\nconst containerNav = document.querySelector('#contet')\n\n\ncontainerNav.addEventListener('click', (e) => {\n  const content = document.querySelector('#content')\n  const first = content.firstElementChild\n  \n  if(e.target.id === 'menu'){\n    first.remove()\n    ;(0,_assets_menupage__WEBPACK_IMPORTED_MODULE_2__.menuPage)()\n  }\n  if(e.target.id === 'contact'){\n    first.remove()\n    ;(0,_assets_contactpage__WEBPACK_IMPORTED_MODULE_3__.contactPage)()\n  }\n  if(e.target.id === 'home'){\n    first.remove()\n    ;(0,_assets_homepage__WEBPACK_IMPORTED_MODULE_4__.homePage)()\n  }\n})\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ })
 
