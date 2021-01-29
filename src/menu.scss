@@ -4,13 +4,13 @@ img {
 }
 
 .container-menu {
- display: flex;
- justify-content: center;
- background: url(./assets/images/bbq.jpg), rgba(0,0,0,0.7) ;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- background-blend-mode: color;
+  display: flex;
+  justify-content: center;
+  background: url(./assets/images/bbq.jpg), rgba(0, 0, 0, 0.7);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color;
 }
 
 .menu {
@@ -18,13 +18,12 @@ img {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: 20rem 20rem;
-  grid-template-rows: auto, repeat(3, 20rem);
+  grid-template-rows: auto repeat(3, 20rem);
   grid-template-areas:
-  "title title" 
-  "plieska ceva"
-  "sarma prebra"
-  "meso meso";
-
+    "title title"
+    "plieska ceva"
+    "sarma prebra"
+    "meso meso";
   row-gap: 20px;
   column-gap: 2rem;
   padding: 5rem 5rem 2rem 5rem;
@@ -62,21 +61,25 @@ img {
 
 .cevat {
   @extend .pliet;
+
   grid-area: ceva;
 }
 
 .sarmat {
   @extend .pliet;
+
   grid-area: sarma;
 }
 
 .prebrat {
   @extend .pliet;
+
   grid-area: prebra;
 }
 
 .mesot {
   @extend .pliet;
+
   grid-area: meso;
   justify-self: center;
   width: 45.5%;
