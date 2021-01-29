@@ -28,15 +28,15 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|cur)$/i,
-        use: [ 
-          { 
+        use: [
+          {
             loader: 'file-loader',
-          }
-        ]
+          },
+        ],
       },
       {
         test: /\.html$/i,
-        use: [ 'file-loader', 'html-loader' ]
+        use: ['file-loader', 'html-loader'],
       },
     ],
   },
