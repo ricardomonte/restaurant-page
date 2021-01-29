@@ -1,0 +1,80 @@
+$bgpurple: purple;
+$bgblue: blue;
+$bgg: green;
+
+@import "home";
+@import "menu";
+@import "contact";
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #e0e0e0;
+
+  .logo {
+    padding: 2rem;
+    font-size: 46px;
+    cursor: url(./assets/images/fork2.svg), auto;
+  }
+
+  ul {
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+
+    .tab {
+      fill: white;
+      stroke: #e0e0e0;
+      position: relative;
+      transform: translate(0, 6px);
+      width: 160px;
+      height: 40px;
+
+      &:hover {
+        animation: up 0.5ms forwards;
+      }
+
+      @keyframes up {
+        100% {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .tab2 {
+      @extend .tab;
+    }
+
+    .textcontact {
+      fill: #8c8c8c;
+      transform-box: fill-box;
+      transform: translate(30px, 30px) scale(1.5);
+      stroke: none;
+      cursor: url(./assets/images/fork2.svg), auto;
+    }
+
+    .textmenu {
+      @extend .textcontact;
+
+      transform: translate(40px, 30px) scale(1.5);
+    }
+  }
+}

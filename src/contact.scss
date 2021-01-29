@@ -1,0 +1,52 @@
+.container-contact {
+  @extend .container-menu;
+
+  height: 100vh;
+
+  .contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .title-contact {
+      font-size: 4em;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .container-phone {
+      .phone {
+        fill: #ff6a53;
+
+        &:hover {
+          transform-box: fill-box;
+          animation: phone 1s infinite;
+        }
+
+        @keyframes phone {
+          50% {
+            transform: rotateZ(-15deg);
+            transform-origin: center;
+            transform-box: fill-box;
+          }
+
+          100% {
+            transform: rotateZ(0deg);
+            transform-origin: center;
+            transform-box: fill-box;
+          }
+        }
+      }
+    }
+
+    .number-contact {
+      text-align: center;
+      font-size: 2rem;
+      color: white;
+    }
+  }
+}
