@@ -1,4 +1,4 @@
-function createSVG() {
+const createSVGp = () => {
   const xmlns = 'http://www.w3.org/2000/svg';
   const boxWidth = 366;
   const boxHeight = 397;
@@ -14,5 +14,5 @@ function createSVG() {
 
   svgElem.append(path);
   return svgElem;
-}
-export { createSVG as default };
+};
+export { createSVGp as default };

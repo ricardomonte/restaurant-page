@@ -1,4 +1,4 @@
-function homePage() {
+const homePage = () => {
   const container = document.querySelector('#content');
   const home = document.createElement('div');
   const containerText = document.createElement('div');
@@ -14,6 +14,6 @@ function homePage() {
   home.classList.add('home');
   home.append(containerText);
   container.append(home);
-}
+};
 
 export { homePage as default };
