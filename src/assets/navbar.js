@@ -1,4 +1,4 @@
-import { createSVG } from './createSvg'
+import { createSVG } from './createSvgTabs'
 
 class CreateNavbar {
   creation(){

@@ -3,6 +3,8 @@ import './style.scss';
 import { menuPage } from './assets/menupage';
 import { contactPage } from './assets/contactpage';
 import { homePage } from './assets/homepage';
+// import img from './assets/images/sarma.jpg';
+
 
 
 
@@ -14,7 +16,7 @@ homePage()
 
 
 const containerNav = document.querySelector('#contet')
-console.log(containerNav)
+
 
 containerNav.addEventListener('click', (e) => {
   const content = document.querySelector('#content')
@@ -33,4 +35,6 @@ containerNav.addEventListener('click', (e) => {
     homePage()
   }
 })
+
+console.log('hel')
 
