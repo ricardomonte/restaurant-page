@@ -2,6 +2,12 @@ $bgpurple: purple;
 $bgblue: blue;
 $bgg: green;
 
+
+
+@import "home";
+@import "menu";
+@import "contact";
+
 html, body, h1, h2, h3, h4, h5, p, ul {
   margin: 0;
   padding: 0;
@@ -21,6 +27,7 @@ ul {
   .logo {
     padding: 2rem;
     font-size: 46px;
+    cursor: url(./assets/images/fork2.svg), auto;
   }
 
   ul {
@@ -29,12 +36,27 @@ ul {
     justify-content: center;
 
     .tab {
-      fill: #ead4af;
+      fill: white;
       stroke: #e0e0e0;
       position: relative;
       transform: translate(0px, 6px);
       width: 160px;
       height: 40px;
+      
+      &:hover {
+        animation: up .5ms forwards;
+      }
+
+      @keyframes up {
+
+        0%{}
+
+
+        100% {
+          transform: scale(1.2)
+        }
+        
+      }
     }
 
     .tab2{
@@ -44,42 +66,15 @@ ul {
     .textcontact {
       fill: #8c8c8c;
       transform-box: fill-box;
-      transform: translate(40px, 30px) scale(1.5);
+      transform: translate(30px, 30px) scale(1.5);
       stroke: none;
-      cursor: pointer;
+      cursor: url(./assets/images/fork2.svg), auto;
     }
 
     .textmenu {
       @extend .textcontact;
 
-      transform: translate(50px, 30px) scale(1.5);
+      transform: translate(40px, 30px) scale(1.5);
     }
   }
-
-}
-
-.prueba {
-  width: 50px;
-  height: 100px;
-  background-color: $bgpurple;
-}
-
-.prueba2 {
-  @extend .prueba;
-
-  background-color: $bgblue;
-}
-
-.prueba3 {
-  @extend .prueba;
-
-  background-color: $bgg;
-}
-
-.visible {
-  display: block;
-}
-
-.invisible {
-  display: none;
 }
